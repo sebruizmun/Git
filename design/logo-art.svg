@@ -1,0 +1,58 @@
+<!-- Care Companion heart artwork, no background. viewBox 0 0 1024 1024 -->
+<g id="care-companion-logo">
+  <defs>
+    <linearGradient id="green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9BD253"/>
+      <stop offset="1" stop-color="#6FAE2E"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFC24D"/>
+      <stop offset="1" stop-color="#F0961B"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5FD3EF"/>
+      <stop offset="1" stop-color="#1FA6D6"/>
+    </linearGradient>
+    <linearGradient id="rust" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F97A45"/>
+      <stop offset="1" stop-color="#E85526"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F14A83"/>
+      <stop offset="1" stop-color="#D42561"/>
+    </linearGradient>
+    <clipPath id="heartClip">
+      <path d="M512,936 C512,936 96,652 96,378 C96,214 220,102 372,102 C466,102 512,164 512,258 C512,164 558,102 652,102 C804,102 928,214 928,378 C928,652 512,936 512,936 Z"/>
+    </clipPath>
+  </defs>
+
+  <path d="M512,936 C512,936 96,652 96,378 C96,214 220,102 372,102 C466,102 512,164 512,258 C512,164 558,102 652,102 C804,102 928,214 928,378 C928,652 512,936 512,936 Z"
+        fill="#FBF3DD"/>
+
+  <g clip-path="url(#heartClip)">
+    <rect x="96" y="102" width="416" height="420" fill="url(#green)"/>
+    <rect x="512" y="102" width="416" height="420" fill="url(#orange)"/>
+    <rect x="96" y="522" width="416" height="420" fill="url(#blue)"/>
+    <rect x="512" y="522" width="416" height="420" fill="url(#rust)"/>
+    <path d="M304,560 L720,560 L512,924 Z" fill="url(#pink)"/>
+  </g>
+
+  <path d="M512,936 C512,936 96,652 96,378 C96,214 220,102 372,102 C466,102 512,164 512,258 C512,164 558,102 652,102 C804,102 928,214 928,378 C928,652 512,936 512,936 Z"
+        fill="none" stroke="#1B2A41" stroke-width="26" stroke-linejoin="round"/>
+
+  <!-- interlocking C rings (connection / companionship motif) -->
+  <g fill="none" stroke="#1B2A41" stroke-width="88" stroke-linecap="round">
+    <circle cx="430" cy="418" r="112" stroke-dasharray="562 143" transform="rotate(6 430 418)"/>
+    <circle cx="596" cy="418" r="112" stroke-dasharray="562 143" transform="rotate(186 596 418)"/>
+  </g>
+  <g fill="none" stroke="#FBF3DD" stroke-width="58" stroke-linecap="round">
+    <circle cx="430" cy="418" r="112" stroke-dasharray="562 143" transform="rotate(6 430 418)"/>
+    <circle cx="596" cy="418" r="112" stroke-dasharray="562 143" transform="rotate(186 596 418)"/>
+  </g>
+
+  <!-- highlight arcs -->
+  <path d="M188,340 A230,230 0 0 1 400,182" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" opacity="0.85"/>
+  <path d="M624,182 A230,230 0 0 1 836,340" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" opacity="0.85"/>
+  <circle cx="190" cy="418" r="12" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="834" cy="418" r="12" fill="#FFFFFF" opacity="0.9"/>
+</g>

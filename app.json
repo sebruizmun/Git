@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Care Companion",
+    "slug": "care-companion",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "carecompanion",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FBF3DD",
+    "primaryColor": "#1FA6D6",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.carecompanion.app",
+      "infoPlist": {
+        "UIBackgroundModes": ["remote-notification"]
+      }
+    },
+    "android": {
+      "package": "com.carecompanion.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#F4EFCF",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["RECEIVE_BOOT_COMPLETED", "SCHEDULE_EXACT_ALARM"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 260,
+          "resizeMode": "contain",
+          "backgroundColor": "#FBF3DD"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#1FA6D6"
+        }
+      ]
+    ]
+  }
+}
