@@ -41,13 +41,9 @@
         fill="none" stroke="#1B2A41" stroke-width="26" stroke-linejoin="round"/>
 
   <!-- interlocking C rings (connection / companionship motif) -->
-  <g fill="none" stroke="#1B2A41" stroke-width="88" stroke-linecap="round">
-    <circle cx="430" cy="418" r="112" stroke-dasharray="562 143" transform="rotate(6 430 418)"/>
-    <circle cx="596" cy="418" r="112" stroke-dasharray="562 143" transform="rotate(186 596 418)"/>
-  </g>
-  <g fill="none" stroke="#FBF3DD" stroke-width="58" stroke-linecap="round">
-    <circle cx="430" cy="418" r="112" stroke-dasharray="562 143" transform="rotate(6 430 418)"/>
-    <circle cx="596" cy="418" r="112" stroke-dasharray="562 143" transform="rotate(186 596 418)"/>
+  <g stroke="#1B2A41" stroke-width="20" stroke-linejoin="round">
+    <path d="M 521.97,504.88 A 118,118 0 1 1 521.97,335.12 L 490.02,368.21 A 72,72 0 1 0 490.02,471.79 Z" fill="#FBF3DD"/>
+    <path d="M 502.03,335.12 A 118,118 0 1 1 502.03,504.88 L 533.98,471.79 A 72,72 0 1 0 533.98,368.21 Z" fill="#FBF3DD"/>
   </g>
 
   <!-- highlight arcs -->

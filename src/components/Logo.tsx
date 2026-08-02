@@ -45,13 +45,15 @@ export function Logo({ size = 64 }: { size?: number }) {
 
       <Path d={HEART_PATH} fill="none" stroke="#1B2A41" strokeWidth={26} strokeLinejoin="round" />
 
-      <G fill="none" stroke="#1B2A41" strokeWidth={88} strokeLinecap="round">
-        <Circle cx={430} cy={418} r={112} strokeDasharray="562 143" transform="rotate(6 430 418)" />
-        <Circle cx={596} cy={418} r={112} strokeDasharray="562 143" transform="rotate(186 596 418)" />
-      </G>
-      <G fill="none" stroke="#FBF3DD" strokeWidth={58} strokeLinecap="round">
-        <Circle cx={430} cy={418} r={112} strokeDasharray="562 143" transform="rotate(6 430 418)" />
-        <Circle cx={596} cy={418} r={112} strokeDasharray="562 143" transform="rotate(186 596 418)" />
+      <G stroke="#1B2A41" strokeWidth={20} strokeLinejoin="round">
+        <Path
+          d="M 521.97,504.88 A 118,118 0 1 1 521.97,335.12 L 490.02,368.21 A 72,72 0 1 0 490.02,471.79 Z"
+          fill="#FBF3DD"
+        />
+        <Path
+          d="M 502.03,335.12 A 118,118 0 1 1 502.03,504.88 L 533.98,471.79 A 72,72 0 1 0 533.98,368.21 Z"
+          fill="#FBF3DD"
+        />
       </G>
 
       <Path
