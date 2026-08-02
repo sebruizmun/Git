@@ -46,10 +46,11 @@ src/
   navigation/             Tab + stack navigators
   screens/                One file per screen
 design/
-  logo-art.svg            Source artwork for the app icon/logo
-assets/                   Generated app icons, splash screen, favicon
+  logo-original.png       Original logo artwork as provided
+  logo-cutout.png          Logo with background removed (source for generated assets)
+assets/                   App icons, splash screen, favicon, and in-app logo, generated from design/logo-cutout.png
 ```
 
 ## Design
 
-The app icon and in-app logo are a recreation of the Care Companion heart mark — a four-color interlocking "C" motif (green, orange, blue, pink) representing connection between patients and the people who care for them. The color palette used throughout the app is drawn directly from the logo.
+The app icon and in-app logo use the official Care Companion heart mark — a four-color interlocking "C" motif (green, orange, blue, pink) representing connection between patients and the people who care for them. The color palette used throughout the app is drawn directly from the logo.
