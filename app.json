@@ -13,7 +13,9 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.carecompanion.app",
       "infoPlist": {
-        "UIBackgroundModes": ["remote-notification"]
+        "UIBackgroundModes": [
+          "remote-notification"
+        ]
       }
     },
     "android": {
@@ -25,7 +27,10 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "permissions": ["RECEIVE_BOOT_COMPLETED", "SCHEDULE_EXACT_ALARM"]
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -47,6 +52,12 @@
           "color": "#1FA6D6"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "98f92515-0117-4cb2-8c7e-bc5069d2cf95"
+      }
+    },
+    "owner": "sebru"
   }
 }
