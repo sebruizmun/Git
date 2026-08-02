@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Ionicons } from '@expo/vector-icons';
 import { useAppStore } from '../context/AppStore';
-import { Avatar, Card, IconButton } from '../components/ui';
+import { Avatar, Card, IconButton, Screen } from '../components/ui';
 import { colors, spacing, typography } from '../theme/theme';
 import type { FamilyStackParamList } from '../navigation/types';
 
@@ -26,7 +26,7 @@ export function FamilyScreen() {
   };
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
+    <Screen>
       <View style={styles.header}>
         <View>
           <Text style={typography.display as any}>Care Circle</Text>
@@ -76,7 +76,7 @@ export function FamilyScreen() {
           );
         }}
       />
-    </View>
+    </Screen>
   );
 }
 

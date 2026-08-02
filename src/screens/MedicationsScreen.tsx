@@ -5,7 +5,7 @@ import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Ionicons } from '@expo/vector-icons';
 import { useAppStore } from '../context/AppStore';
 import { PersonStrip } from '../components/PersonStrip';
-import { Card, EmptyState, IconButton } from '../components/ui';
+import { Card, EmptyState, IconButton, Screen } from '../components/ui';
 import { colors, personPalette, spacing, typography } from '../theme/theme';
 import { formatTime } from '../utils/date';
 import type { MedicationsStackParamList } from '../navigation/types';
@@ -24,7 +24,7 @@ export function MedicationsScreen() {
   if (!activePerson) return null;
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
+    <Screen>
       <PersonStrip onAddPerson={() => (navigation.getParent() as any)?.navigate('FamilyTab', { screen: 'PersonForm' })} />
       <View style={styles.header}>
         <Text style={typography.display as any}>Medications</Text>
@@ -67,7 +67,7 @@ export function MedicationsScreen() {
           );
         }}
       />
-    </View>
+    </Screen>
   );
 }
 

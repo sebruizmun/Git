@@ -5,7 +5,7 @@ import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Ionicons } from '@expo/vector-icons';
 import { useAppStore } from '../context/AppStore';
 import { PersonStrip } from '../components/PersonStrip';
-import { Button, Card, EmptyState, ProgressRing } from '../components/ui';
+import { Button, Card, EmptyState, ProgressRing, Screen } from '../components/ui';
 import { colors, personPalette, radii, spacing, typography } from '../theme/theme';
 import { formatDateLong, formatTime, todayISO } from '../utils/date';
 import { appointmentsOn, medicationsDueOn } from '../utils/schedule';
@@ -35,6 +35,7 @@ export function TodayScreen() {
   if (!activePerson) return null;
 
   return (
+    <Screen>
     <ScrollView
       style={{ flex: 1, backgroundColor: colors.background }}
       contentContainerStyle={styles.container}
@@ -126,6 +127,7 @@ export function TodayScreen() {
 
       <View style={{ height: spacing.xl }} />
     </ScrollView>
+    </Screen>
   );
 }
 

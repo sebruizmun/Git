@@ -5,7 +5,7 @@ import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Ionicons } from '@expo/vector-icons';
 import { useAppStore } from '../context/AppStore';
 import { PersonStrip } from '../components/PersonStrip';
-import { Card, EmptyState, IconButton } from '../components/ui';
+import { Card, EmptyState, IconButton, Screen } from '../components/ui';
 import { colors, radii, spacing, typography } from '../theme/theme';
 import { formatTime, relativeDayLabel, todayISO } from '../utils/date';
 import { pastAppointments, upcomingAppointments } from '../utils/schedule';
@@ -41,7 +41,7 @@ export function AppointmentsListScreen() {
   if (!activePerson) return null;
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background }}>
+    <Screen>
       <PersonStrip onAddPerson={() => (navigation.getParent() as any)?.navigate('FamilyTab', { screen: 'PersonForm' })} />
       <View style={styles.header}>
         <Text style={typography.display as any}>Appointments</Text>
@@ -78,7 +78,7 @@ export function AppointmentsListScreen() {
           </Card>
         )}
       />
-    </View>
+    </Screen>
   );
 }
 

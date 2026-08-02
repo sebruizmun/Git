@@ -3,7 +3,7 @@ import { Linking, ScrollView, StyleSheet, Switch, Text, View } from 'react-nativ
 import { Ionicons } from '@expo/vector-icons';
 import { useAppStore } from '../context/AppStore';
 import { Logo } from '../components/Logo';
-import { Card } from '../components/ui';
+import { Card, Screen } from '../components/ui';
 import { colors, spacing, typography } from '../theme/theme';
 import { ensureNotificationPermission } from '../utils/notifications';
 
@@ -11,6 +11,7 @@ export function SettingsScreen() {
   const { state, activePerson, updateSettings } = useAppStore();
 
   return (
+    <Screen>
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.container}>
       <Text style={typography.display as any}>Settings</Text>
 
@@ -63,6 +64,7 @@ export function SettingsScreen() {
 
       <View style={{ height: spacing.xl }} />
     </ScrollView>
+    </Screen>
   );
 }
 

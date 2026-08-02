@@ -3,7 +3,7 @@ import { KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Logo } from '../components/Logo';
-import { Button } from '../components/ui';
+import { Button, Screen } from '../components/ui';
 import { colors, radii, spacing, typography } from '../theme/theme';
 import { useAppStore } from '../context/AppStore';
 import type { Role } from '../types/models';
@@ -29,6 +29,7 @@ export function OnboardingScreen() {
   };
 
   return (
+    <Screen style={{ backgroundColor: 'transparent' }}>
     <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <LinearGradient colors={[colors.creamDeep, colors.background]} style={StyleSheet.absoluteFill} />
       <ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="handled">
@@ -105,6 +106,7 @@ export function OnboardingScreen() {
         )}
       </ScrollView>
     </KeyboardAvoidingView>
+    </Screen>
   );
 }
 
