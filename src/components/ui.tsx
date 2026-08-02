@@ -9,15 +9,21 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import Svg, { Circle } from 'react-native-svg';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, personPalette, radii, shadow, spacing, typography } from '../theme/theme';
 import type { PersonColorKey } from '../theme/theme';
 
 export function Screen({ children, style }: { children: React.ReactNode; style?: ViewStyle }) {
+  const insets = useSafeAreaInsets();
   return (
-    <SafeAreaView edges={['top']} style={[{ flex: 1, backgroundColor: colors.background }, style]}>
+    <View
+      style={[
+        { flex: 1, backgroundColor: colors.background, paddingTop: insets.top + spacing.sm },
+        style,
+      ]}
+    >
       {children}
-    </SafeAreaView>
+    </View>
   );
 }
 
