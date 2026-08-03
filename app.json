@@ -11,7 +11,7 @@
     "primaryColor": "#1FA6D6",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.carecompanion.app",
+      "bundleIdentifier": "com.ljavierruiz.carecompanion",
       "infoPlist": {
         "UIBackgroundModes": [
           "remote-notification"
@@ -19,7 +19,7 @@
       }
     },
     "android": {
-      "package": "com.carecompanion.app",
+      "package": "com.ljavierruiz.carecompanion",
       "adaptiveIcon": {
         "backgroundColor": "#F4EFCF",
         "foregroundImage": "./assets/android-icon-foreground.png",
