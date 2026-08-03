@@ -11,12 +11,7 @@
     "primaryColor": "#1FA6D6",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ljavierruiz.carecompanion",
-      "infoPlist": {
-        "UIBackgroundModes": [
-          "remote-notification"
-        ]
-      }
+      "bundleIdentifier": "com.ljavierruiz.carecompanion"
     },
     "android": {
       "package": "com.ljavierruiz.carecompanion",
