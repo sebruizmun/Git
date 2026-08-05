@@ -16,6 +16,11 @@ import { MedicationDetailScreen } from '../screens/MedicationDetailScreen';
 import { FamilyScreen } from '../screens/FamilyScreen';
 import { PersonFormScreen } from '../screens/PersonFormScreen';
 import { SettingsScreen } from '../screens/SettingsScreen';
+import { GamesScreen } from '../screens/games/GamesScreen';
+import { MemoryMatchScreen } from '../screens/games/MemoryMatchScreen';
+import { PatternRecallScreen } from '../screens/games/PatternRecallScreen';
+import { WordScrambleScreen } from '../screens/games/WordScrambleScreen';
+import { TriviaScreen } from '../screens/games/TriviaScreen';
 import { colors } from '../theme/theme';
 
 const Tab = createBottomTabNavigator();
@@ -24,6 +29,7 @@ const AppointmentsStack = createNativeStackNavigator();
 const MedicationsStack = createNativeStackNavigator();
 const FamilyStack = createNativeStackNavigator();
 const SettingsStack = createNativeStackNavigator();
+const GamesStack = createNativeStackNavigator();
 
 const screenOptions = {
   headerStyle: { backgroundColor: colors.background },
@@ -74,6 +80,18 @@ function FamilyNavigator() {
   );
 }
 
+function GamesNavigator() {
+  return (
+    <GamesStack.Navigator screenOptions={screenOptions}>
+      <GamesStack.Screen name="Games" component={GamesScreen} options={{ headerShown: false }} />
+      <GamesStack.Screen name="MemoryMatch" component={MemoryMatchScreen} options={{ title: 'Memory Match' }} />
+      <GamesStack.Screen name="PatternRecall" component={PatternRecallScreen} options={{ title: 'Pattern Recall' }} />
+      <GamesStack.Screen name="WordScramble" component={WordScrambleScreen} options={{ title: 'Word Scramble' }} />
+      <GamesStack.Screen name="Trivia" component={TriviaScreen} options={{ title: 'Trivia' }} />
+    </GamesStack.Navigator>
+  );
+}
+
 function SettingsNavigator() {
   return (
     <SettingsStack.Navigator screenOptions={screenOptions}>
@@ -108,6 +126,7 @@ function MainTabs() {
             TodayTab: focused ? 'home' : 'home-outline',
             AppointmentsTab: focused ? 'calendar' : 'calendar-outline',
             MedicationsTab: focused ? 'medkit' : 'medkit-outline',
+            GamesTab: focused ? 'game-controller' : 'game-controller-outline',
             FamilyTab: focused ? 'people' : 'people-outline',
             SettingsTab: focused ? 'settings' : 'settings-outline',
           };
@@ -118,6 +137,7 @@ function MainTabs() {
       <Tab.Screen name="TodayTab" component={TodayNavigator} options={{ title: 'Today' }} />
       <Tab.Screen name="AppointmentsTab" component={AppointmentsNavigator} options={{ title: 'Visits' }} />
       <Tab.Screen name="MedicationsTab" component={MedicationsNavigator} options={{ title: 'Meds' }} />
+      <Tab.Screen name="GamesTab" component={GamesNavigator} options={{ title: 'Games' }} />
       <Tab.Screen name="FamilyTab" component={FamilyNavigator} options={{ title: 'Family' }} />
       <Tab.Screen name="SettingsTab" component={SettingsNavigator} options={{ title: 'Settings' }} />
     </Tab.Navigator>

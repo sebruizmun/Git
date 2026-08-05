@@ -26,3 +26,11 @@ export type FamilyStackParamList = {
 export type SettingsStackParamList = {
   Settings: undefined;
 };
+
+export type GamesStackParamList = {
+  Games: undefined;
+  MemoryMatch: undefined;
+  PatternRecall: undefined;
+  WordScramble: undefined;
+  Trivia: undefined;
+};
