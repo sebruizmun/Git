@@ -11,7 +11,10 @@
     "primaryColor": "#1FA6D6",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ljavierruiz.carecompanion"
+      "bundleIdentifier": "com.ljavierruiz.carecompanion",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.ljavierruiz.carecompanion",
