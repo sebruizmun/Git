@@ -3,6 +3,7 @@
     "name": "Care Companion",
     "slug": "care-companion",
     "version": "1.0.0",
+    "newArchEnabled": false,
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "scheme": "carecompanion",
